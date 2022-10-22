@@ -15,7 +15,12 @@ body {
   background: #f5f4fa;
 }
 .background-prologue {
-  background-image: url("../images/Background-section.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(106, 170, 177, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/Background-section.jpg");
   background-size: cover;
 }
 .title {
@@ -32,6 +37,7 @@ body {
   height: 50px;
   margin-top: 30px;
   background: #2196f3;
+  border-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -58,10 +64,10 @@ body {
   display: flex;
   width: 295px;
   margin: 32px 0 32px 0;
-
   justify-content: space-between;
   list-style-type: none;
   line-height: 0.875;
+  align-items: center;
 }
 .logo {
   width: 145px;
@@ -172,58 +178,7 @@ body {
 
   color: #757575;
 }
-.title3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 
-  color: #212121;
-}
-.text3 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-.title4 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-.text4 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-.title5 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-.text5 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
 .title6 {
   display: block;
   font-weight: 700;
@@ -252,18 +207,9 @@ body {
   max-width: 270px;
 }
 
-.footer1 {
-  background: #2f303a;
-  margin: 0 auto;
-  flex-grow: 1;
-  max-width: 200%;
-}
-.footer2 {
-  background: #2f303a;
-  width: 100%;
-  margin: 0 auto;
-  flex-grow: 1;
-  max-width: 200%;
+.footer {
+  display: flex;
+  gap: 15px;
 }
 
 .logo-footer {
@@ -287,24 +233,7 @@ body {
   text-align: left;
   color: #ffffff;
 }
-.footer-details1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-details2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
 li {
   list-style-type: none;
 }
@@ -329,42 +258,15 @@ li {
 .button:hover {
   background: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.button2:hover {
+
+.button:focus {
   background: #2196f3;
   color: #ffffff;
-}
-.button3:hover {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button4:hover {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button5:hover {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button1:focus {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button2:focus {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button3:focus {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button4:focus {
-  background: #2196f3;
-  color: #ffffff;
-}
-.button5:focus {
-  background: #2196f3;
-  color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfoliobox {
   background: #ffffff;
@@ -447,19 +349,15 @@ li {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
-  flex-direction: column;
-  align-items: flex;
+  display: flex;
+  gap: 10px;
   max-width: 206px;
   margin: 0 auto;
 }
 .first-list-style {
-  max-width: 270px;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   line-height: 0.875;
-  align-items: center;
-  text-align: center;
 }
 .second-list-style {
   display: flex;
@@ -507,6 +405,12 @@ ul {
   margin-inline-start: 32px;
   margin-inline-end: 32px;
 }
+.social-links svg:hover {
+  --color1: #afb1b8;
+  --color2: #ffffff;
+  --color3: #2196f3;
+  --color4: #ffffff;
+}
 .figcaptionclients {
   position: relative;
   padding: 18px 32px 14px 32px;
@@ -529,23 +433,28 @@ ul {
 .social {
   color: #ffffff;
   display: flex;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  max-width: 206px;
+  gap: 10px;
 }
 .icon:hover {
   fill: #2196f3;
 }
 .icon-box {
   background: #f5f4fa;
-  max-width: 270px;
-  max-height: 120px;
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
-  margin: 0 15px;
-}
-.content-box {
-  padding-inline: 102px;
-  padding-top: 21px;
+  display: flex;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+}
+
+.li-class {
+  display: flex;
+  gap: 10px;
+}
+.li-class svg:hover {
+  --color1: #afb1b8;
+  --color2: #ffffff;
+  --color3: #2196f3;
+  --color4: #ffffff;
 }
