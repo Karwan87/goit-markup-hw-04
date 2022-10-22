@@ -453,6 +453,7 @@ li {
   margin: 0 auto;
 }
 .first-list-style {
+  max-width: 270px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -501,8 +502,14 @@ ul {
   max-width: 270px;
   max-height: 80px;
   display: flex;
+  align-content: space-between;
+  padding: 5px;
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
 }
 .figcaptionclients {
+  position: relative;
+  padding: 18px 32px 14px 32px;
   max-width: 170px;
   max-height: 92px;
   box-sizing: border-box;
@@ -531,6 +538,14 @@ ul {
 }
 .icon-box {
   background: #f5f4fa;
+  max-width: 270px;
+  max-height: 120px;
   border-radius: 4px;
   margin: 0 15px;
+}
+.content-box {
+  padding-inline: 102px;
+  padding-top: 21px;
+  justify-content: center;
+  margin: 0 auto;
 }
