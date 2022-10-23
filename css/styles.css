@@ -220,8 +220,8 @@ body {
   margin-top: 60px;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
-
   color: #ffffff;
+  text-align: left;
 }
 .address {
   font-style: normal;
@@ -322,7 +322,6 @@ li {
   box-sizing: border-box;
   display: flex;
   max-width: 1200px;
-  width: 100%;
   align-items: center;
   margin: 0 auto;
   padding: 0 15px;
@@ -349,10 +348,10 @@ li {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
-  display: flex;
-  gap: 10px;
-  max-width: 206px;
-  margin: 0 auto;
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 72px;
 }
 .first-list-style {
   display: flex;
@@ -410,6 +409,7 @@ ul {
   --color2: #ffffff;
   --color3: #2196f3;
   --color4: #ffffff;
+  cursor: pointer;
 }
 .figcaptionclients {
   position: relative;
@@ -419,6 +419,10 @@ ul {
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.figcaptionclients svg:hover {
+  --color4: #2196f3;
+  cursor: pointer;
 }
 .clients-box-style {
   display: flex;
@@ -433,7 +437,7 @@ ul {
 .social {
   color: #ffffff;
   display: flex;
-  gap: 10px;
+  text-align: left;
 }
 .icon:hover {
   fill: #2196f3;
@@ -457,4 +461,15 @@ ul {
   --color2: #ffffff;
   --color3: #2196f3;
   --color4: #ffffff;
+}
+.social-items {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-container {
+  text-align: left;
+  margin-left: 215px;
+  margin-right: 70px;
 }
